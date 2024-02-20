@@ -3,6 +3,9 @@
     "start": "servor --reload"
   },
   "dependencies": {
+    "flowbite": "^2.3.0"
+  },
+  "devDependencies": {
     "servor": "^4.0.2"
   }
 }
