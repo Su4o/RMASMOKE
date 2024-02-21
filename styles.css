@@ -1,16 +1,8 @@
 html {
-  font-family: "Chivo Mono", monospace;
   background-color: #1f2937;
   background-size: cover;
   background-attachment: fixed;
   backdrop-filter: blur(1000px);
-}
-.bg-black-800 {
-  background-color: black;
-}
-
-.dark .dark:bg-black-800 {
-  background-color: black;
 }
 
 h1,
@@ -20,4 +12,18 @@ h4,
 h5,
 h6 {
   color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
 }
