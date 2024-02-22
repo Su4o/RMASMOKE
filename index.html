@@ -300,32 +300,5 @@
       </div>
   </div>
   </footer>
-
-  <script>
-     document.addEventListener("DOMContentLoaded", function () {
-      const observerOptions = {
-          root: null,
-          rootMargin: "0px",
-          threshold: 1 // no anim if <100
-      };
-
-      function handleIntersection(entries, observer) {
-          entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                  entry.target.classList.add("fade-in");
-                  observer.unobserve(entry.target);
-              }
-          });
-      }
-
-      const observer = new IntersectionObserver(handleIntersection, observerOptions);
-      const textElements = document.querySelectorAll("#default-styled-tab-content div");
-
-      textElements.forEach(element => {
-          observer.observe(element);
-      });
-  });
-
-  </script>
 </html>
 
