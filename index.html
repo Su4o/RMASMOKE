@@ -114,9 +114,9 @@
 
 
         <p class="text-sm text-gray-500 dark:text-gray-400">
-          Some examples of flowbite here,
+          Random text here
       <strong class="font-medium text-gray-800 dark:text-white"
-            >What is RMASHIM?</strong>
+            >What is RMASMOKE?</strong>
             <br>
               <br>
             <p class="text-sm text-gray-500 dark:text-gray-400">
@@ -300,32 +300,5 @@
       </div>
   </div>
   </footer>
-
-  <script>
-     document.addEventListener("DOMContentLoaded", function () {
-      const observerOptions = {
-          root: null,
-          rootMargin: "0px",
-          threshold: 1000000 // no anim if <1000
-      };
-
-      function handleIntersection(entries, observer) {
-          entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                  entry.target.classList.add("fade-in");
-                  observer.unobserve(entry.target);
-              }
-          });
-      }
-
-      const observer = new IntersectionObserver(handleIntersection, observerOptions);
-      const textElements = document.querySelectorAll("#default-styled-tab-content div");
-
-      textElements.forEach(element => {
-          observer.observe(element);
-      });
-  });
-
-  </script>
 </html>
 
