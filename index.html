@@ -14,10 +14,7 @@
 
     <link rel="stylesheet" href="styles.css" />
 
-    <script
-      type="text/javascript"
-      src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"
-    ></script>
+    <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
 
     <link
       rel="stylesheet"
@@ -35,6 +32,12 @@
     </head>
   <body>
 
+    <br>
+    <div class="flex flex-col items-center justify-center space-y-4">
+      <p class="font-bold text-gray-900 text-7xl dark:text-white">RMASmoke</p>
+      <img class="rounded-full w-10 h-10" src="https://storage.googleapis.com/boom-ai-images/results/1pG24FONB3bcsF5/00001.jpg" alt="image description">
+    </div>
+    <br>
     
     <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
       <ul
@@ -81,7 +84,6 @@
         role="tabpanel"
         aria-labelledby="profile-tab"
       >
-
 
 
         <p class="text-sm text-gray-500 dark:text-gray-400">
@@ -155,17 +157,17 @@
 
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
 
-    <div id="magic-mouse-script">
-      <script type="text/javascript">
-          options = {
-              cursorOuter: "circle-basic",
-              hoverEffect: "circle-move",
-              hoverItemMove: false,
-              defaultCursor: false,
-              outerWidth: 30,
-              outerHeight: 30,
-          };
-          magicMouse(options);
+      <script>
+    options = {
+  "outerStyle": "circle-basic",
+  "hoverEffect": "pointer-blur",
+  "hoverItemMove": false,
+  "defaultCursor": false,
+  "outerWidth": 30,
+  "outerHeight": 30
+}
+magicMouse(options);
+            
       </script>
   </div>
 
@@ -193,6 +195,8 @@
 </div>
 </div>
 </div>
+
+
 
 </footer>
 </body>
