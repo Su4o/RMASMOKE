@@ -6,6 +6,7 @@
     "flowbite": "^2.3.0"
   },
   "devDependencies": {
+    "html-validate": "^8.10.0",
     "servor": "^4.0.2"
   }
 }
